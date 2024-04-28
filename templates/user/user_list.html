@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/user_list.css")}}">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/background.css")}}">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    <section>
+        <h1>ユーザー一覧</h1>
+
+    <table border="1">
+        <tr>
+            <th>名前</th>
+            <th>メール</th>
+        </tr>
+        {% for u in user_list%}
+        <tr>
+            <td>{{ u[0]}}</td>
+            <td>{{ u[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="{{url_for('host_top')}}" class="top">トップへ</a>
+    </section>
+</body>
+</html>

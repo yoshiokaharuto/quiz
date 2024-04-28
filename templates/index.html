@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/background.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/top.css')}}">
+    <title>クイズアプリ</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+
+    <section>
+        <p class="title">クイズアプリ</p>
+        <p class="login">ログイン</p>
+            <form action="" method="post">
+                <input class="form"  size="25"type="text" name="mail" placeholder="メール"> <br>
+            <input class="form"  size="25"type="password" name ="pw" placeholder="パスワード"> <br>
+            <input class="button" type="submit" value="ログイン"> <br>
+        </form>
+        <a href="{{url_for('user.send_page')}}" class="pw_reset">パスワードを忘れた方はこちら</a>
+        <a href="{{url_for('user.sign_up')}}" class="sign_up">新規登録はこちら</a>
+    </section>
+</body>
+</html>

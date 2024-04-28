@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/background.css")}}">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/quiz_search.css")}}">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    <section>
+        <p class="title">クイズ検索</p>
+        <p class="sub_title">やりたいクイズの問題を入力してください</p>
+
+        <form action="{{url_for('quiz.search_result')}}" method="post">
+            <input class="form" type="text" name="question" size="40"> <br>
+            <a class="back" href="{{url_for('user_top')}}">戻る</a>
+            <input class="submit" type="submit" value="検索">
+        </form>
+
+    </section>
+</body>
+</html>

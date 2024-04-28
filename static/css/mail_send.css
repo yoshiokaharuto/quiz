@@ -1,0 +1,28 @@
+.sub_title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 20px auto;
+}
+.form{
+    border-color: black;
+    margin: 10px;
+}
+.submit{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 60px;
+    padding: 5px;
+    border-color: black;
+    margin: 10px;
+}
+.back{
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 60px;
+    padding: 5px;
+    margin: 10px;
+}

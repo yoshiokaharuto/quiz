@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/background.css")}}">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/sign_up.css")}}">
+    <title>新規登録</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    
+    <section>
+        <p class="title">新規登録</p>
+        <p class="sub_title">以下のフォームに必要事項を入力してください</p>
+
+        <form action="{{url_for('user.sign_up_confirm')}}" method="POST">
+            名前:       <input class="form" type="text" name="name"> <br>
+            メール:     <input class="form" type="mail" name="mail"> <br>
+            パスワード: <input class="form" type="password" name="pw"><br>
+            <a href="{{url_for('top')}}" class="back">戻る</a>
+            <input class="submit" type="submit" value="次へ">
+        </form>
+    </section>
+</body>
+</html>

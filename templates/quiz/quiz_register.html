@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/quiz_register.css")}}">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/background.css")}}">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+
+    <section>
+        <h1>クイズ登録</h1>
+
+        <div class="home1">
+            <div class="home2">
+                <form action="{{url_for('quiz.quiz_register_result')}}" method="post">
+                    ID<br>
+                    <input type="text" name="id" class="input"><br>
+                    問題<br>
+                    <input type="text" name="question" class="input"><br>
+                    答え<br>
+                    <input type="text" name="answer" class="input"><br>
+        
+                    <a href="{{url_for('host_top')}}" class="back">戻る</a>
+                    <button type="submit" class="submit">登録</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/background.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/mail_send.css')}}">
+    <title>パスワード変更</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+
+    <section>
+        <p class="title">パスワード変更</p>
+        <p class="sub_title">登録したメールアドレスを入力してください。</p>
+        <p class="sub_title">送信したメールからパスワードの変更が可能です。</p>
+
+        <form action="{{url_for('user.send_mail')}}">
+            <input type="mail" name="to" size="35" class="form"> <br>
+            <a href="{{url_for('top')}}" class="back">戻る</a>
+            <button type="submit" class="submit">送信</button>
+        </form>
+    </section>
+</body>
+</html>

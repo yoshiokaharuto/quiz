@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static' , filename="css/background.css")}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename="css/user_conclusion.css")}}">
+    <title>登録完了</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    
+    <section>
+        <p>登録が完了しました</p>
+
+        <a href="{{url_for('top')}}">トップへ</a>
+    </section>
+</body>
+</html>

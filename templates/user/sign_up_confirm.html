@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/background.css")}}">
+    <link rel="stylesheet" href="{{url_for('static',filename="css/sign_up_confirm.css")}}">
+    <title>登録確認</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    
+    <section>
+            <p>以下の内容で登録します。よろしいですか?</p>
+        <div class="confirm">名前:{{name}}</div>
+        <div class="confirm">メール:{{mail}}</div>
+        <div class="confirm">パスワード:********</div>
+        <a  href="{{url_for('user.sign_up')}}">戻る</a>
+        <a  href="{{url_for('user.sign_up_execute')}}">登録</a>
+        </section>
+</body>
+</html>

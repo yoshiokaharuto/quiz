@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "{{url_for('static',filename = 'css/quiz_detail.css')}}">
+    <link rel = "stylesheet" href="{{url_for('static',filename='css/background.css')}}">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    
+    <section>
+        <div class="home1">
+            <div class="home2">
+                {% for r in result%}
+            <h3>問題ID:{{r[0]}}</h3>
+            <h2>{{r[1]}}</h2>
+            <form action="{{url_for('quiz.quiz_answer')}}" method="post">
+                <input type="text"  class="register" name="answer"><br>
+    
+                <button type="submit" class="button">解答</button>
+            </form>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+</body>
+</html>

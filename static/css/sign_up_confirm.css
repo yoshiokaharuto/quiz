@@ -1,0 +1,18 @@
+p{
+    font-size: 20px;
+}
+a{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    box-shadow:5px 5px 8px 3px #ccc;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 7px 15px; 
+}
+.confirm{
+    margin: 20px auto;
+    /* font-family: 'Courier New', Courier, monospace;; */
+    font-size: 20px;
+}

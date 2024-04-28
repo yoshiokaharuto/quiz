@@ -1,0 +1,26 @@
+.login{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin: 20px auto;
+}
+.form{
+    border-color: black;
+    margin: 10px;
+}
+ a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin: 10px auto;
+}
+.button{
+    border-color: black ;
+    border-radius: 10px;
+    box-shadow:5px 5px 8px 3px #ccc;
+    font-size: 15px;
+    margin: 20px;
+    padding: 7px 15px; 
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+table{
+    margin:20px auto;
+    border-color: 6px solid black;
+    border-collapse:collapse;
+}
+
+.num{
+    text-decoration: none;
+    margin: 5px;
+}
+.top{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    margin:10px;
+}
+p{
+    font-size: 20px;
+}

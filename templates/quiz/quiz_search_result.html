@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/background.css')}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename='css/quiz_search_result.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script src="{{url_for('static',filename="js/background.js")}}"></script>
+    <section>
+        <p>検索結果</p>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>問題</th>
+            </tr>
+            {% for l in list%}
+            <tr>
+                <td><a href="{{url_for('quiz.quiz_detail')}}?id={{l[0]}}" name="id" class="list">{{l[0]}}</a></td>
+                <td>{{l[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{url_for('user_top')}}" class="top">トップへ</a>
+    </section>
+</body>
+</html>
